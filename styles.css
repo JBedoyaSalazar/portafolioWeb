@@ -1,0 +1,166 @@
+:root {
+    /* Paleta Dark */
+    --bg-primary: #121212;     /* Fondo base */
+    --bg-surface: #1e1e1e;     /* Cards y secciones */
+    --text-main: #e5e7eb;      /* Blanco suave */
+    --accent: #93c5fd;         /* Azul desaturado */
+    --txt-secundary: #bbb2b2;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+  background-color: var(--bg-surface);
+  color: var(--text-main);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-main);
+}
+
+.header{
+    text-align: center;
+}
+
+.header__name{
+    font-size: 4rem;
+    margin: 3rem 0;
+}
+
+.header__tagline{
+    color:#bbb2b2;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    background-color: var(--bg-primary);
+    height: 5rem;
+    gap: 6rem;
+    margin-bottom: 15rem;
+}
+
+.nav__item{
+    list-style: none;
+}
+
+.nav__link:hover{
+    color: #bbb2b2;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__title{
+    font-size: 6rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.hero__subtitle{
+    text-align: center;
+    margin-bottom: 2rem;
+    color:#bbb2b2;
+    font-size: 3rem;
+}
+
+.hero__description{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.hero__actions{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.button{
+    font-size: 1.8rem;
+    background-color: #121212;
+    padding: 1.2rem;
+    border-radius: 12px;
+    transition: 0.3s ease-in-out;
+}
+
+.button:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    color: var(--txt-secundary);
+}
+
+.hero__stats{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    color: var(--txt-secundary);
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.about{
+    border-top: 0.1rem solid var(--txt-secundary);
+}
+
+.about__container{
+    margin-top: 3rem;
+}
+
+.about__title{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about__intro{
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: oblique;
+    margin-bottom: 1.5rem;
+}
+
+.about__text{
+    display: flex;
+    justify-self: center;
+    text-align: center;
+    width: 60rem;
+    margin-bottom: 1.5rem;
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    line-height: 1.2;
+}
+
+.quote__author{
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
