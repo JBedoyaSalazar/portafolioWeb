@@ -120,12 +120,27 @@ a{
     margin-bottom: 5rem;
 }
 
+.stat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .about{
     border-top: 0.1rem solid var(--txt-secundary);
+    margin-bottom: 5rem;
 }
 
 .about__container{
-    margin-top: 3rem;
+    width: 80vw;
+    height: auto;
+    padding: 1.2rem;
+    margin: 3rem auto;
+    border: 0.1rem solid var(--txt-secundary);
+    border-radius: 16px;
+    box-shadow: 5px 5px 15px 5px #000000;
+
 }
 
 .about__title{
@@ -156,11 +171,227 @@ a{
     align-items: center;
     font-size: 1.8rem;
     line-height: 1.2;
+    margin-bottom: 3rem;
 }
 
 .quote__author{
+    align-self: flex-end;
     font-weight: bold;
     font-size: 1.4rem;
     text-align: right;
 }
 
+.values{
+    border-left: 3px solid var(--accent);
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.values__title{
+    font-size: 2.8rem;
+    text-align: center;
+}
+
+.values__list{
+    list-style: none;
+    font-size: 2rem;
+}
+
+.projects{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.projects__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.projects__title{
+    font-size: 3rem;
+    padding: 12px;
+}
+
+.projects__description{
+    text-indent: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.projects__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-content: center;
+}
+
+.project{
+    border: 1px solid var(--txt-secundary);
+    padding: 12px;
+    border-radius: 24px;
+}
+
+.project__title{
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.project__description{
+    text-indent: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.project__subtitle{
+    font-style: italic;
+}
+
+.project__learnings{
+    list-style: none;
+    margin-left: 8px;
+}
+
+.project__links{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project__link{
+    background-color: #000000;
+    padding: 12px;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project__link:hover{
+    transform: translateY(-8px);
+    color: var(--txt-secundary);
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.project__badge{
+    color: var(--txt-secundary);
+    text-transform: uppercase;
+}
+
+.skills{
+    border-top: 1px solid var(--txt-secundary);
+}
+
+.skills__container{
+    width: 90%;
+    margin: 50px auto;
+    border: 1px solid var(--txt-secundary);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.skills__title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.skills__subtitle{
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+.skills__list{
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill__bar{
+    margin: 8px 0;
+    background-color: var(--bg-primary);
+    width: 150px;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid var(--txt-secundary);
+}
+
+.skill__progress{
+    position: relative;
+    height: auto;
+    width: 120px;
+    border-radius: 20px;
+    padding-left: 8px;
+    overflow: hidden;
+}
+
+.skill__progress--html{
+    background-color: #883F1A;
+    width: 90%;
+    color: var(--bg-primary);
+}
+
+.skill__progress--css{
+    background-color: #7E57C2;
+    width: 70%;
+    color: var(--bg-primary);
+}
+
+.skill__progress--js{
+    background-color: #FFE008;
+    width: 40%;
+    color: var(--bg-primary);
+}
+
+.learning__title{
+    font-style: italic;
+    font-size: 2.2rem;
+}
+
+.learning__list{
+    text-align: center;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.contact__container{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+
+}
+
+.contact__title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.contact__methods{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 24px 0;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact__methods:hover , .contact__methods a:hover{
+    color: #bbb2b2;
+    transform: translateY(-12px);
+}
+
+.footer{
+    background-color: var(--bg-primary);
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@keyframes fillBar {
+  to {
+    transform: scaleX(0.9); /* equivale a 90% */
+  }
+}
